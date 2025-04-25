@@ -58,7 +58,6 @@ def backup_database():
 
 # Lên lịch backup
 schedule.every().day.at("0:00").do(backup_database)  
-schedule.every().day.at("12:00").do(backup_database) 
 
 # Vòng lặp kiểm tra lịch
 print("🔄 Đang chạy lịch trình backup...")
